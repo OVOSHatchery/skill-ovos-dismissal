@@ -11,8 +11,8 @@ class NevermindSkill(MycroftSkill):
         # This setting would be obeyed if there were a way to toggle it.
         self.feedback = (self.settings.get('verbal_feedback') is not False)
 
-    @intent_handler(IntentBuilder('').require('Nevermind'))
-    def handle_nevermind_intent(self, message):
+    @intent_handler(IntentBuilder('dismiss.mycroft').require('Nevermind'))
+    def handle_dismiss_intent(self, message):
         self.log.info("User dismissed Mycroft.")
         if self.feedback:
             self.speak_dialog('dismissed')

@@ -1,0 +1,5 @@
+{
+  "utterance" : "nevermind",
+  "intent_type" : "dismiss.mycroft",
+  "expected_dialog" : "dismissed"
+}
