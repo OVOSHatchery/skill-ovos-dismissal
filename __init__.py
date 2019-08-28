@@ -10,10 +10,9 @@ class NevermindSkill(MycroftSkill):
 
     @intent_handler(IntentBuilder('dismiss.mycroft').require('Nevermind'))
     def handle_dismiss_intent(self, message):
-        self.log.info("User dismissed Mycroft.")
-        if self.settings.get('verbal_feedback', False):
+        if self.settings.get('verbal_feedback') == False:
             self.speak_dialog('dismissed')
-
+        self.log.info("User dismissed Mycroft.")
 
 def create_skill():
     return NevermindSkill()
