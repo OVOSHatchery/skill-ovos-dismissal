@@ -9,7 +9,7 @@
                         "name": "verbal_feedback",
                         "type": "checkbox",
                         "label": "Provide verbal feedback when dismissed",
-                        "value": "false"
+                        "value": "False"
                     }
                 ]
             }
