@@ -2,10 +2,8 @@
 Dismisses Mycroft
 
 ## About
-There's no button on Linux, but who needs one? This skill teaches Mycroft a handful of dismissive terms, in case you should change your mind after speaking the wake word.
-
-This skill includes a setting "verbal_feedback" which, if set to False, does exactly what it sounds like, enabling you to dismiss Mycroft silently. However, I have not yet implemented a way to *toggle* that value, so verbal feedback is always on.
-
+Allows you to dismiss Mycroft verbally, in case of accidental activation, or if you change your mind. By default, Mycroft will confirm
+this action, but there is a setting to disable verbal feedback, accessible over the web interface.
 
 
 ## Examples
@@ -16,6 +14,7 @@ This skill includes a setting "verbal_feedback" which, if set to False, does exa
 
 ## Credits
 @ChanceNCounter
+@krisgesling
 
 ## Category
 Configuration

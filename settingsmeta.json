@@ -6,10 +6,10 @@
                 "name": "Verbal Feedback",
                 "fields": [
                     {
-                        "name": "verbal_feedback",
+                        "name": "verbal_feedback_enabled",
                         "type": "checkbox",
                         "label": "Provide verbal feedback when dismissed",
-                        "value": "False"
+                        "value": "True"
                     }
                 ]
             }
