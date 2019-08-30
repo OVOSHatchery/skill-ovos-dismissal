@@ -6,10 +6,10 @@ from adapt.intent import IntentBuilder
 from mycroft.skills.core import MycroftSkill, intent_handler
 
 
-class NevermindSkill(MycroftSkill):
+class DismissalSkill(MycroftSkill):
 
     def __init__(self):
-        super(NevermindSkill, self).__init__(name='NevermindSkill')
+        super(DismissalSkill, self).__init__(name='DismissalSkill')
 
     @intent_handler(IntentBuilder('dismiss.mycroft').require('Nevermind'))
     def handle_dismiss_intent(self, message):
@@ -18,4 +18,4 @@ class NevermindSkill(MycroftSkill):
         self.log.info("User dismissed Mycroft.")
 
 def create_skill():
-    return NevermindSkill()
+    return DismissalSkill()
