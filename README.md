@@ -14,6 +14,7 @@ Allows you to dismiss Mycroft verbally, in case of accidental activation, or if 
 ## Credits
 @ChanceNCounter
 @krisgesling
+@AIDungeonWiXAnon
 
 ## Category
 Configuration
