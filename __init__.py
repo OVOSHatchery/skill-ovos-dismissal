@@ -13,7 +13,7 @@ class DismissalSkill(MycroftSkill):
 
     @intent_handler(IntentBuilder('dismiss.mycroft').require('Nevermind'))
     def handle_dismiss_intent(self, message):
-        if self.settings.get('verbal_feedback_enabled'):
+        if self.settings.get('verbal_feedback_enabled', True):
             self.speak_dialog('dismissed')
         self.log.info("User dismissed Mycroft.")
 
