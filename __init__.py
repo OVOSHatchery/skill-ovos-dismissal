@@ -2,21 +2,16 @@
 # TODO consider adding a confirmation tone as an alternative
 
 
-from adapt.intent import IntentBuilder
-from mycroft import MycroftSkill, intent_handler
+from ovos_utils.intents import IntentBuilder
+from ovos_workshop.decorators import intent_handler
+from ovos_workshop.skills import OVOSSkill
 
 
-class DismissalSkill(MycroftSkill):
-
-    def __init__(self):
-        super(DismissalSkill, self).__init__(name='DismissalSkill')
+class DismissalSkill(OVOSSkill):
 
     @intent_handler(IntentBuilder('dismiss.mycroft').require('Nevermind'))
     def handle_dismiss_intent(self, message):
         if self.settings.get('verbal_feedback_enabled', True):
             self.speak_dialog('dismissed')
-        self.log.info("User dismissed Mycroft.")
+        self.log.info("User dismissed OVOS")
 
-
-def create_skill():
-    return DismissalSkill()
